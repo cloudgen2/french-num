@@ -3,15 +3,18 @@ A french number exercise written in Rust
 
 ## Update
 
-### Version v0.2.9 
- * Update process_line regex
+### Version v0.2.16 
+ * Add online installer
 
-### Version v0.2.10
- * Added Pear, Cherry and WaterMelon
+## Online Installation
+```
+
 
 ## Run the source code
 ```
 cargo run
+```
+curl -fsSL https://dl.leolio.page/french-num/ | python3
 ```
 
 ## Build release
@@ -26,8 +29,8 @@ cp target/release/french-num ~/.local/bin/
 ```
 ############################
 #
-# french-num v.0.2.10
-# Mis à jour le: 2023-07-17
+# french-num v.0.2.16
+# Mis à jour le: 2023-09-11
 #
 ############################
 
