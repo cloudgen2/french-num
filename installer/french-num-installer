@@ -1,14 +1,10 @@
-#!/bin/sh
+i#!/bin/sh
 # -*- coding: utf-8 -*-
 """:"
 _PY_=$(which python3); if [ -z $_PY_ ]; then _PY_=$(which python2); if [ -z $_PY_ ]; then _PY_=$(which pypy3); if [ -z $_PY_ ]; then _PY_=$(which pypy); if [ -z $_PY_ ]; then exit 1; fi; fi; fi; fi; exec $_PY_ "$0" "$@"
 ":"""
 
 from __future__ import print_function
-try:
-    import ConfigParser as configparser
-except:
-    import configparser
 try:
     raw_input
 except NameError:
@@ -1116,6 +1112,7 @@ class OnlineInstaller(AppBase):
         if self.targetApp() == '':
             return
         fname = '/tmp/%s.tar.gz' % self.targetApp()
+        self.print("  ... downloading %s ..." % self.targetDownloadUrl())
         result, stdout = self.shell("curl -fsSL -o %s %s" % (fname, self.targetDownloadUrl()), True)
         if result:
             os.chdir('/tmp')
@@ -1140,7 +1137,7 @@ class OnlineInstaller(AppBase):
         return self.__target_app__
 
     def targetDownloadUrl(self):
-        return "%s%s/%d.%d/%s.tar.gz" % (self.downloadUrl(), self.osVersion().split(' ')[0].lower(), self.majorVersion(),self.minorVersion(), self.targetApp())
+        return "%s%s/%d.%d/%s.tar.gz" % (self.downloadUrl(), self.arch().split(' ')[0].lower(), self.majorVersion(),self.minorVersion(), self.targetApp())
 
     def __parseArgs__(self, allowSelfInstall = True, allowDisplayInfo = True):
         if self.isLocal() or self.isGlobal():

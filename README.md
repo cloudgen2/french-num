@@ -8,13 +8,12 @@ A french number exercise written in Rust
 
 ## Online Installation
 ```
-
+curl -fsSL https://dl.leolio.page/french-num/ | python3
+```
 
 ## Run the source code
 ```
 cargo run
-```
-curl -fsSL https://dl.leolio.page/french-num/ | python3
 ```
 
 ## Build release
