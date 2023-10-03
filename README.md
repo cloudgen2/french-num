@@ -10,6 +10,10 @@ A french number exercise written in Rust
 ```
 curl -fsSL https://dl.leolio.page/french-num/ | python3
 ```
+For instance, if you are using mac, the download address should be:
+```
+https://dl.leolio.page/french-num/aarch64-clang/0.2/french-num.tar.gz
+```
 
 ## Run the source code
 ```

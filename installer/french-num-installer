@@ -1,4 +1,4 @@
-i#!/bin/sh
+#!/bin/sh
 # -*- coding: utf-8 -*-
 """:"
 _PY_=$(which python3); if [ -z $_PY_ ]; then _PY_=$(which python2); if [ -z $_PY_ ]; then _PY_=$(which pypy3); if [ -z $_PY_ ]; then _PY_=$(which pypy); if [ -z $_PY_ ]; then exit 1; fi; fi; fi; fi; exec $_PY_ "$0" "$@"
@@ -1137,7 +1137,10 @@ class OnlineInstaller(AppBase):
         return self.__target_app__
 
     def targetDownloadUrl(self):
-        return "%s%s/%d.%d/%s.tar.gz" % (self.downloadUrl(), self.arch().split(' ')[0].lower(), self.majorVersion(),self.minorVersion(), self.targetApp())
+        libc = 'glibc'
+        if 'Clang' in self.gccVersion():
+            libc = 'clang'
+        return "%s%s-%s/%d.%d/%s.tar.gz" % (self.downloadUrl(), self.arch().split(' ')[0].lower(), libc, self.majorVersion(),self.minorVersion(), self.targetApp())
 
     def __parseArgs__(self, allowSelfInstall = True, allowDisplayInfo = True):
         if self.isLocal() or self.isGlobal():
