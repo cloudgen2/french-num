@@ -23,17 +23,21 @@ use number::all_num;
 pub struct Thing<'a> {
     sex: Sex,
     num: u32,
+    starts_with_vowel: bool,
     single: &'a str,
-    plural: &'a str
+    plural: &'a str,
+    lang: Lang
 }
 
 impl Thing<'_> {
-    pub fn new<'a> (sex: Sex, single: &'a str, plural: &'a str) -> Thing <'a>{
+    pub fn new<'a> (sex: Sex, starts_with_vowel: bool, single: &'a str, plural: &'a str) -> Thing <'a>{
         Thing {
             sex: sex,
+            starts_with_vowel: starts_with_vowel,
             num: 0,
             single: single, 
-            plural: plural    
+            plural: plural,
+            lang: Lang::English
         }
     }
 }

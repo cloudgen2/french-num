@@ -1,7 +1,8 @@
 #[derive(Copy, Clone)]
 pub enum Sex {
     Male,
-    Female
+    Female,
+    Any
 }
 
 #[derive(Copy, Clone)]

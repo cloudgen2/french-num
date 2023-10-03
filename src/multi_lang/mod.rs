@@ -17,6 +17,7 @@ use crate::french::print_type_exit_to_exit_sub;
 
 #[derive(Copy, Clone)]
 pub enum Lang {
+    English,
     French,
     German,
     Spanish
@@ -24,6 +25,7 @@ pub enum Lang {
 
 pub fn print_type_exit_to_exit( lang: Lang) {
     match lang {
+        Lang::English => print_type_exit_to_exit_sub(),
         Lang::French => print_type_exit_to_exit_sub(),
         Lang::German => print_type_exit_to_exit_sub(),
         Lang::Spanish => print_type_exit_to_exit_sub()
@@ -32,6 +34,7 @@ pub fn print_type_exit_to_exit( lang: Lang) {
 
 pub fn print_update_at(date: &str, lang: Lang){
     match lang {
+        Lang::English => print_update_at_sub(date),
         Lang::French => print_update_at_sub(date),
         Lang::German => print_update_at_sub(date),
         Lang::Spanish => print_update_at_sub(date)
@@ -40,6 +43,7 @@ pub fn print_update_at(date: &str, lang: Lang){
 
 pub fn print_level(level: u32, lang: Lang){
     match lang {
+        Lang::English => print_level_sub(level),
         Lang::French => print_level_sub(level),
         Lang::German => print_level_sub(level),
         Lang::Spanish => print_level_sub(level)
@@ -62,6 +66,7 @@ pub fn ask_n_check_drink(q: u32, min: u32, max: u32, drink_type:Drink, lang:Lang
     let num: u32 = rand::thread_rng().gen_range(min..max);
     
     match lang  {
+        Lang::English => ask_n_check_drink_sub(q, num, drink_val),
         Lang::French => ask_n_check_drink_sub(q, num, drink_val),
         Lang::German => ask_n_check_drink_sub(q, num, drink_val),
         Lang::Spanish => ask_n_check_drink_sub(q, num, drink_val)
@@ -85,6 +90,7 @@ pub fn ask_n_check_fruit(q: u32, min: u32, max: u32, fruit_type:Fruit, lang:Lang
     }  
     let num: u32 = rand::thread_rng().gen_range(min..max);
     match lang  {
+        Lang::English => ask_n_check_fruit_sub(q, num, fruit_val),
         Lang::French => ask_n_check_fruit_sub(q, num, fruit_val),
         Lang::German => ask_n_check_fruit_sub(q, num, fruit_val),
         Lang::Spanish => ask_n_check_fruit_sub(q, num, fruit_val)
@@ -107,6 +113,7 @@ pub fn ask_n_check_food(q: u32, min: u32, max: u32, food_type:Food, lang:Lang) {
     }
     let num: u32 = rand::thread_rng().gen_range(min..max);
     match lang  {
+        Lang::English => ask_n_check_food_sub(q, num, food_val),
         Lang::French => ask_n_check_food_sub(q, num, food_val),
         Lang::German => ask_n_check_food_sub(q, num, food_val),
         Lang::Spanish => ask_n_check_food_sub(q, num, food_val)
@@ -129,6 +136,7 @@ pub fn ask_n_check_animal(q: u32, min: u32, max: u32, animal_type:Animal, lang:L
     }
     let num: u32 = rand::thread_rng().gen_range(min..max);
     match lang  {
+        Lang::English => ask_n_check_animal_sub(q, num,  animal_val),
         Lang::French => ask_n_check_animal_sub(q, num,  animal_val),
         Lang::German => ask_n_check_animal_sub(q, num,  animal_val),
         Lang::Spanish => ask_n_check_animal_sub(q, num,  animal_val)
@@ -147,6 +155,7 @@ pub fn ask_n_check_transport(q: u32, min: u32, max: u32, transport_type:Transpor
     }
     let num: u32 = rand::thread_rng().gen_range(min..max);
     match lang  {
+        Lang::English => ask_n_check_transport_sub(q, num,  transport_val),
         Lang::French => ask_n_check_transport_sub(q, num,  transport_val),
         Lang::German => ask_n_check_transport_sub(q, num,  transport_val),
         Lang::Spanish => ask_n_check_transport_sub(q, num,  transport_val)
@@ -156,6 +165,7 @@ pub fn ask_n_check_transport(q: u32, min: u32, max: u32, transport_type:Transpor
 pub fn ask_n_check_num(q: u32, min: u32, max: u32, lang:Lang) {
     let num: u32 = rand::thread_rng().gen_range(min..max);
     match lang  {
+        Lang::English => ask_n_check_num_sub(q, num),
         Lang::French => ask_n_check_num_sub(q, num),
         Lang::German => ask_n_check_num_sub(q, num),
         Lang::Spanish => ask_n_check_num_sub(q, num)
