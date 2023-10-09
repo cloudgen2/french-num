@@ -13,6 +13,7 @@ pub fn to_thing<'a>(num: u32, fruit: Fruit) -> Thing<'a> {
         Fruit::Pear => result = Thing::new( Sex::Female, false, "poire", "poires" ),
         Fruit::WaterMelon => result = Thing::new( Sex::Female, false, "pastèque", "pastèques" ),
         Fruit::Cherry => result = Thing::new( Sex::Female, false, "cerise", "cerises" ),
+        Fruit::Grape => result = Thing::new( Sex::Male, false, "raisin", "raisins" ),
         Fruit::Any => result = Thing::new( Sex::Male, false, "fruit", "fruits")
     }
     result.set_num(num);

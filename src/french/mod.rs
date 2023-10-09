@@ -37,7 +37,7 @@ impl Thing<'_> {
             num: 0,
             single: single, 
             plural: plural,
-            lang: Lang::English
+            lang: Lang::French
         }
     }
 }
@@ -154,7 +154,6 @@ impl ThisIs for Thing<'_>  {
         self.num = num;
     }
 }
-
 
 pub fn print_update_at_sub(date: &str){
     println!("# Mis à jour le: {}", date);

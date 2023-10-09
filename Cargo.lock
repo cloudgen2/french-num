@@ -40,8 +40,8 @@ dependencies = [
 ]
 
 [[package]]
-name = "english-num"
-version = "0.2.16"
+name = "french-num"
+version = "0.3.0"
 dependencies = [
  "colored",
  "rand",
