@@ -12,6 +12,7 @@ pub fn to_thing<'a>(num: u32, animal: Animal) -> Thing<'a> {
         Animal::Fish => result = Thing::new( Sex::Male, false, "poisson", "poissons" ),
         Animal::Horse => result = Thing::new( Sex::Male, false, "cheval", "chevaux"),
         Animal::Rabbit => result = Thing::new( Sex::Male, false, "lapin", "lapins"),
+        Animal::Pig => result = Thing::new( Sex::Male, false, "cochon", "cochons"),
         Animal::Any => result = Thing::new( Sex::Male, true, "animal", "animaux")
     }
     result.set_num(num);
