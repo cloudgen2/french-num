@@ -1,6 +1,5 @@
 # french-num
-A french number exercise written in Rust.  This project uses the online-downloader script in https://github.com/cloudgen2/online-downloader
-
+A french number exercise written in Rust.  This project uses the online-downloader script in https://github.com/cloudgen2/online-installer
 ## Update
 
 ### Version v0.2.16 
