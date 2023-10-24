@@ -1,5 +1,5 @@
 # french-num
-A french number exercise written in Rust
+A french number exercise written in Rust.  This project uses the online-downloader script in https://github.com/cloudgen2/online-downloader
 
 ## Update
 
@@ -32,49 +32,62 @@ cp target/release/french-num ~/.local/bin/
 ```
 ############################
 #
-# french-num v.0.2.16
-# Mis à jour le: 2023-09-11
+# french-num v.0.4.0
+# Mis à jour le: 2023-10-14
 #
 ############################
 
 Tapez 'exit' pour terminer le programme!
 
 == Premier niveau L1 ==
-1) Quel est le numéro 5 en français? cinq
+1) Quel est le numéro 7 en français? sept
 » C'est correct!
-2) Quel est le numéro 6 en français? six
+2) Quel est le numéro 4 en français? quatre
 » C'est correct!
-3) Quel est le numéro 2 en français? duex
-» La bonne réponse est 'deux'.
- ** 3) Quel est le numéro 2 en français? deux
+3) Quel est le numéro 2 en français? deux
 » C'est correct!
-4) Quel est le numéro 6 en français? siix
-» La bonne réponse est 'six'.
- ** 4) Quel est le numéro 6 en français? six
+4) Quel est le numéro 7 en français? sept
 » C'est correct!
-5) Quel est le numéro 10 en français? dix
+5) Quel est le numéro 8 en français? huit
 » C'est correct!
-6) Quel est le numéro 1 en français? un
+6) Quel est le numéro 4 en français? quatre
 » C'est correct!
-7) Quel est le numéro 7 en français? sept
+7) Quel est le numéro 3 en français? trois
 » C'est correct!
-8) Quel est le numéro 10 en français? dix
+8) Quel est le numéro 8 en français? huit
 » C'est correct!
-9) Quel est le numéro 7 en français? sept
+9) Quel est le numéro 18 en français? dix-huit
 » C'est correct!
-10) Quel est le numéro 8 en français? huit
+10) Quel est le numéro 18 en français? dix-hit
+» 'dix-hit'.
+» La bonne réponse est 'dix-huit'.
+ ** 10) Quel est le numéro 18 en français? dix-huit
 » C'est correct!
-12) Qu'est-ce que c'est? ( 1🍎 )? Ceci est une pomme.
+11) Quel est le numéro 20 en français? vingt
 » C'est correct!
-13) Qu'est-ce que c'est? ( 9🍎 )? Ce sont neuf pommes.
+12) Quel est le numéro 13 en français? treize
 » C'est correct!
-14) Qu'est-ce que c'est? ( 9🍎 )? Ce sont neuf pommes.
+13) Quel est le numéro 15 en français? quinze
 » C'est correct!
-15) Qu'est-ce que c'est? ( 4🍎 )? Ce sont quatre pommes.
+14) Quel est le numéro 14 en français? quatorze
 » C'est correct!
-17) Qu'est-ce que c'est? ( 1🍊 )? Ceci est une orange.
+15) Quel est le numéro 11 en français? onze
 » C'est correct!
-18) Qu'est-ce que c'est? ( 2🍊 )? Ce sont deux oranges.
+16) Quel est le numéro 5 en français? cinq
+» C'est correct!
+17) Quel est le numéro 6 en français? six
+» C'est correct!
+18) Quel est le numéro 2 en français? deux
+» C'est correct!
+19) Quel est le numéro 14 en français? quatorze
+» C'est correct!
+20) Quel est le numéro 11 en français? onze
+» C'est correct!
+== Niveau 2 L2 ==
+21) Qu'est-ce que c'est? ( 1🍎 )? Ceci est une pomme.
+» C'est correct!
+22) Qu'est-ce que c'est? ( 10🍎 )? 
 ```
 
 Happy Programming!
+
