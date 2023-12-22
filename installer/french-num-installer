@@ -3318,3 +3318,4 @@ if __name__ == "__main__":
     app.setInstallation(appName='french-num-installer',author='Cloudgen Wong',homepage="https://github.com/cloudgen2/french-num",downloadUrl="https://dl.leolio.page/french-num",lastUpdate='2023-11-17',majorVersion=0,minorVersion=4)
     app.start() 
 
+
